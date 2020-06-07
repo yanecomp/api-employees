@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  db:
+    image: mysql
+    ports:
+      - "3306:3306"
+    container_name: docker-mysql-api
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+    restart: always

@@ -18,10 +18,6 @@ public class ClienteService {
 	@Autowired
 	private ClienteRepository repository;
 	
-	/*public List<Cliente> findAll(){
-		return repository.findAll();
-	}*/
-	
 	public Page<Cliente> findAll() {
         int page = 0;
         int size = 10;
@@ -42,18 +38,10 @@ public class ClienteService {
 		repository.deleteById(id);
 	}
 	
-	/*public List<Cliente> findClientByName(String nome) {
-		return repository.findClientByName(nome);
-	}*/
-	
 	public Page<Cliente> findClientByName(String nome, int page, int size) {
         PageRequest pageRequest = PageRequest.of(page, size, Sort.Direction.ASC, "nome");
         return repository.findClientByCpf(nome.toLowerCase(), pageRequest);
     }
-	
-	/*public Cliente findClientByCpf(String cpf) {
-		return repository.findClientByCpf(cpf);
-	}*/
 	
 	public Page<Cliente> findClientByCpf(String cod, int page, int size) {
         PageRequest pageRequest = PageRequest.of(page, size, Sort.Direction.ASC, "cpf");

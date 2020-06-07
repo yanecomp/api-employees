@@ -69,7 +69,7 @@ public class Cliente extends AbstractEntity<Long> {
 		dateOfBirth.setTime(dataNasc);
 		Calendar today = Calendar.getInstance();
 		int age = today.get(Calendar.YEAR) - dateOfBirth.get(Calendar.YEAR);
-		
+
 		return age;
 	}
 
