@@ -3,7 +3,7 @@ O arquivo Docker encontra-se na raiz do projeto e seu nome é docker-compose.yam
 o prompt de comando e digite: docker-compose up -d 
 Em seguida pressione Enter.
 
-Na raiz do projeto existe um arquivo chamado Testes API.postman_collection.json
+Na raiz do projeto existe um arquivo chamado Testes API Employess.postman_collection.json
 Utilize ele para testar a API através do Postman. 
-A tabela do banco de dados está inicialmente vazia, portanto é necessário que primeiro você execute comandos
+A tabela EMPLOYEES está inicialmente vazia, portanto é necessário que primeiro você execute comandos
 do tipo POST para inserir novos registros.
